@@ -1,3 +1,5 @@
 export function Contact(){
-  return <div>contact</div>
+  return (
+    <section id="contact">contact</section>
+  )
 }

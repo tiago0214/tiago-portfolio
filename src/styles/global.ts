@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import img from './../assets/bg-texture.png'
+import img from './../assets/textures/2.png'
 
 export const GlobalStyle = createGlobalStyle`
   *{
@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
 
   section{
     margin-top: 8rem;
+    height: 100vh;
   }
 
   section > h2, section > h5{
@@ -78,7 +79,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  .bnt{
+  .btn{
     width: max-content;
     display: inline-block;
     color: ${props => props.theme.primary};

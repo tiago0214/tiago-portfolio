@@ -1,3 +1,5 @@
 export function Projects(){
-  return <div>Projects</div>
+  return (
+    <section id="projects">projects</section>
+  )
 }

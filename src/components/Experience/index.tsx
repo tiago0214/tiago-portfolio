@@ -1,3 +1,5 @@
 export function Experience(){
-  return <div>Experience</div>
+  return (
+    <section id="experience">experience</section>
+  )
 }
