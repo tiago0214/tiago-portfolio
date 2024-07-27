@@ -28,7 +28,7 @@ export const NavBarLink = styled.a`
   }
 
   &.active{
-    background: ${props => props.theme["color-bg"]};
-    color: ${props => props.theme.white}
+    background: ${props => props.theme.primary};
+    color: ${props => props.theme["color-bg"]}
   }
 `

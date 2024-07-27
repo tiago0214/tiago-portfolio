@@ -57,20 +57,25 @@ export const AboutContent = styled.div`
        text-align: center;
       }
     }
+`;
 
-  p{
-    margin: 2rem 0 2.6rem;
-    color: ${props => props.theme.light};
+export const AboutParagraph = styled.div`
+  margin: 0 0 2.6rem;
+  color: ${props => props.theme.light};
 
-    @media screen and (max-width: 1024px){
-      &{
-        margin: 1rem 0 1.5rem;
-      }
+  svg{
+    padding-top: 5px;
+    color: ${props => props.theme.primary};
+  }
+
+  @media screen and (max-width: 1024px){
+    &{
+      margin: 0.5rem 0 1.5rem;
     }
-    @media screen and (max-width: 600px){
-      &{
-        margin: 1.5rem 0;
-      }
+  }
+  @media screen and (max-width: 600px){
+    &{
+      margin: 1.5rem 0;
     }
   }
 `;
