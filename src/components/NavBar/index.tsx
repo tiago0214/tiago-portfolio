@@ -1,4 +1,4 @@
-import { Book, Chats, HouseLine, ProjectorScreenChart, User } from "@phosphor-icons/react";
+import { Book, Chats, Folders, HouseLine, User } from "@phosphor-icons/react";
 import { NavBarContainer, NavBarLink } from "./styles";
 import { useState } from "react";
 
@@ -30,7 +30,7 @@ export function NavBar(){
         href="#projects" 
         onClick={() => setActiveNav('#projects')} 
         className= {activeNav === '#projects' ? 'active' : ''}
-      ><ProjectorScreenChart size={20}/>
+      ><Folders size={20}/>
       </NavBarLink>
       <NavBarLink 
         href="#contact" 

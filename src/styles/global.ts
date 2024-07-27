@@ -53,7 +53,7 @@ export const GlobalStyle = createGlobalStyle`
 
   section{
     margin-top: 8rem;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   section > h2, section > h5{
