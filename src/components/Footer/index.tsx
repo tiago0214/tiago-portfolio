@@ -15,8 +15,8 @@ export function Footer(){
       </Permalinks>
 
       <FooterSocials>
-        <a href="https://github.com/tiago0214" className="footer--link"><GithubLogo size={24}/></a>
-        <a href="https://www.linkedin.com/in/tiago-souza-ba234b11a/" className="footer--link"><LinkedinLogo size={24}/></a>
+        <a href="https://github.com/tiago0214" className="footer--link" target="_blank"><GithubLogo size={24}/></a>
+        <a href="https://www.linkedin.com/in/tiago-souza-ba234b11a/" className="footer--link" target="_blank"><LinkedinLogo size={24}/></a>
       </FooterSocials>
 
       <FooterCopyright>

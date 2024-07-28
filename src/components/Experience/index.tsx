@@ -2,7 +2,7 @@ import { SealCheck } from "@phosphor-icons/react";
 import { ExperienceContainer, ExperienceContent } from "./styles";
 
 export function Experience(){
-  const colorIcon = '#4db5ff';
+  const colorIcon = '#64CCC5';
 
   return (
     <section id="experience">

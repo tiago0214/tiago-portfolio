@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   background: ${props => props.theme.primary};
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 7rem;
@@ -10,7 +10,7 @@ export const FooterContainer = styled.footer`
   .footer--logo{
     font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: inline-block;
   }
 
@@ -24,7 +24,7 @@ export const Permalinks =  styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin: 0 auto 3rem;
+  margin: 0 auto 1rem;
 
   @media screen and (max-width: 600px){
     flex-direction: column;
@@ -36,7 +36,7 @@ export const FooterSocials = styled.div`
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 4rem;
+  margin: 1rem;
 
   & > a{
     background-color: ${props => props.theme["color-bg"]};
@@ -60,6 +60,6 @@ export const FooterSocials = styled.div`
 `;
 
 export const FooterCopyright = styled.div`
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   color: ${props => props.theme["color-bg"]}
 `;
