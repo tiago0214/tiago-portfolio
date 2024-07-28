@@ -30,7 +30,7 @@ interface DataProps {
 export function Projects(){
   return (
     <section id="projects">
-      <h5>My Recent Work</h5>
+      <h5>My Recent</h5>
       <h2>Projects</h2>
 
       <ProjectsContainer className="container">
