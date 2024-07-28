@@ -18,9 +18,12 @@ export function About(){
 
         <AboutContent>
           <AboutParagraph>
-            <p><ArrowCircleRight/> Greetings, My academic journey has been a dynamic transition from a Bachelor's degree in Law to Software Engineering.</p>
-            <p><ArrowCircleRight/> With a focus on web development, I work as a full-stack developer and specialize in backend languages such as JavaScript/Node.js and C#, as well as frontend development using HTML and CSS. Proficient in code versioning tools such as Git and GitHub, I also have experience with containerization using Docker.</p>
-            <p><ArrowCircleRight/> Currently, I am pursuing a degree in Software Engineering at Uninter, complementing my legal background. This educational journey has equipped me with a diverse set of skills, preparing me for the challenges and opportunities.</p>
+
+            <p><ArrowCircleRight/> Hi there!</p>
+            <p><ArrowCircleRight/>  I'm a web developer and right now, I'm pursuing a degree in Software Engineering.</p>
+            <p><ArrowCircleRight/>  I've specialized as a full-stack developer, so I work with React on the frontend and use Node.js and C# on the backend. When it comes to JavaScript, I usually go with TypeScript.</p>
+            <p><ArrowCircleRight/> I'm from Brazil, but I'm pretty flexible about working remotely or on-site from just about anywhere. Oh, and I speak both Portuguese and English.</p>
+
           </AboutParagraph>
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </AboutContent>

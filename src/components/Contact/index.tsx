@@ -1,7 +1,34 @@
 import { Envelope, WhatsappLogo } from "@phosphor-icons/react";
 import { ContactContainer, ContactForm, ContactOption, ContactOptions } from "./styles";
+import { useForm } from "react-hook-form";
+
+import { message } from 'antd';
+interface DataForm {
+  name: string
+  email: string
+  message: string
+}
 
 export function Contact(){
+  const { register, handleSubmit, reset } = useForm<DataForm>();
+
+  async function dataForm (data:DataForm){
+    try{
+      await fetch("https://661d087de7b95ad7fa6bec28.mockapi.io/messages", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+      message.success("Message Sent! I'll get back to you soon.");
+    }catch{
+      console.log("Erro");
+    }finally{
+      reset();
+    }
+  }
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -23,15 +50,27 @@ export function Contact(){
           </ContactOption>
         </ContactOptions>
         {/* Form */}
-        <ContactForm action="">
-          <input type="text" name="name" placeholder="Your Name" required/>
-          <input type="text" name="email" placeholder="Your Email" required/>
-          <textarea name="message" rows={7} placeholder="Your Message" required></textarea>
-
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
-         
+        <ContactForm action="" onSubmit={handleSubmit(dataForm)}>
+          <input 
+            type="text" 
+            placeholder="Your Name" 
+            required
+            {...register('name')}
+          />
+          <input 
+            type="text" 
+            placeholder="Your Email" 
+            required
+            {...register('email')}
+          />
+          <textarea 
+            rows={7} 
+            placeholder="Your Message" 
+            required
+            {...register('message')}
+          />
+          
+          <button type="submit" className="btn btn-primary">Send Message</button>
         </ContactForm>
       </ContactContainer>
     </section>

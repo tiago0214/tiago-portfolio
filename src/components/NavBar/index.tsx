@@ -5,7 +5,6 @@ import { useState } from "react";
 export function NavBar(){
   const [activeNav, setActiveNav] = useState('#');
 
-  console.log('render')
   return (
     <NavBarContainer>
       <NavBarLink 
