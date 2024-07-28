@@ -14,16 +14,21 @@ export function Contact(){
 
   async function dataForm (data:DataForm){
     try{
-      await fetch("https://661d087de7b95ad7fa6bec28.mockapi.io/messages", {
+     const request1 = new Request('https://661d087de7b95ad7fa6bec28.mockapi.io/messages', {
         headers: {
           "Content-Type": "application/json",
         },
         method: "POST",
         body: JSON.stringify(data),
       });
-      message.success("Message Sent! I'll get back to you soon.");
+      const response =  await fetch(request1);
+      
+      if(response.status !== 201)
+          throw new Error('erro')
+
+      return message.success("Message Sent! I'll get back to you soon.");
     }catch{
-      console.log("Erro");
+      return message.error("Something went wrong.");
     }finally{
       reset();
     }
