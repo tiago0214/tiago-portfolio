@@ -28,12 +28,12 @@ export const ProjectItem = styled.article`
   transition: ${props => props.theme.transition};
 
   & > h3{
-    margin: 1.2rem 0 2rem;
+    margin: 2rem 0 2rem;
   }
 
   &:hover{
-    border-color: ${props => props.theme["primary-variant"]};
-    background: transparent;
+  background: rgb(0,0,0,0.2);
+  border-color: ${props => props.theme["primary-variant"]};
   }
 `;
 
@@ -45,5 +45,6 @@ export const ProjectItemImage = styled.div`
 export const ProjectItemCta = styled.div`
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  /* margin-bottom: 1rem; */
 `;

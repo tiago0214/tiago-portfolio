@@ -15,8 +15,8 @@ const data = [
     id: 2,
     image : IMG2,
     title: "Old portfolio",
-    github: "https://github.com/tiago0214/beauty-company-project",
-    deploy:  "https://beauty-company-project.vercel.app/"
+    github: "https://github.com/tiago0214/portfolio_V2",
+    deploy:  "https://portfolio-v2-omega-six.vercel.app/"
   }
 ]
 interface DataProps {

@@ -31,7 +31,7 @@ export const ExperienceContainer = styled.div`
     }
 
     &:hover{
-      background: transparent;
+      background: rgba(0,0,0,0.2);
       border-color: ${props => props.theme["primary-variant"]};
       cursor: default;
     }

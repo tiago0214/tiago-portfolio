@@ -24,16 +24,24 @@ export const HeaderContent = styled.div`
 `;
 
 export const MeContainer = styled.div`
-  background: linear-gradient(${props => props.theme.primary}, transparent);
   width: 22rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 7.5rem;
+  margin-top: 8.0rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  /* height: 30rem; */
+  padding: 3rem 1.5rem 0 1.5rem;
+
+  background: linear-gradient(45deg,#D4F1F4,#75E6DA,#BFD7ED,#60A3D9,#21B6A8,#A3EBB1);
+  background-size: 500% 500%;
+  animation: color 12s ease-in-out infinite alternate;
+
+  @keyframes color{
+    0%{
+      background-position: 0 100%;
+    }
+  }
 `
 
 export const ScrollDownLink = styled.a`

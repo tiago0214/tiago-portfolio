@@ -45,7 +45,7 @@ export const ContactOption = styled.article`
   }
 
   &:hover{
-    background: transparent;
+    background: rgb(0,0,0,0.2);
     border-color: ${props => props.theme["primary-variant"]};
   }
 `;

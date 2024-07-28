@@ -83,7 +83,7 @@ export const GlobalStyle = createGlobalStyle`
     width: max-content;
     display: inline-block;
     color: ${props => props.theme.primary};
-    padding: 0.75rem 1.2rem;
+    padding: 8px 22px;
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid ${props => props.theme.primary};
