@@ -29,10 +29,10 @@ export const MeContainer = styled.div`
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 4.5rem;
+  margin-top: 7.5rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   /* height: 30rem; */
 `
 

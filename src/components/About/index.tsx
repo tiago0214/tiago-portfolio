@@ -1,6 +1,6 @@
 import { AboutContainer, AboutContent, AboutMe, AboutMeImage, AboutParagraph } from "./styles";
 
-import ME from '../../assets/ME.png'
+import ME from '../../assets/about.png'
 import { ArrowCircleRight } from "@phosphor-icons/react";
 
 export function About(){

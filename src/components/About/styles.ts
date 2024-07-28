@@ -43,11 +43,11 @@ export const AboutMe = styled.div`
 export const AboutMeImage = styled.div`
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  /* transform: rotate(10deg); */
   transition: ${props => props.theme.transition};
 
   &:hover{
-    transform: rotate(0);
+    transform: rotate(5deg);
   }
 `;
 
