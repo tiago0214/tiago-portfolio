@@ -45,7 +45,7 @@ export const ExperienceContainer = styled.div`
     @media screen and (max-width: 600px){
       &{    
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 0;
       }
     }
   }
@@ -71,7 +71,7 @@ export const ExperienceContent = styled.div`
   @media screen and (max-width: 600px){
     &{
       gap: 0;
-
+      padding: 0 0.5rem 1rem 0.5rem;
     }
   }
 `
