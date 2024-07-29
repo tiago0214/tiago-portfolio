@@ -1,26 +1,26 @@
-import { createContext, ReactNode, useState } from "react";
+// import { createContext, ReactNode, useState } from "react";
 
-export const LangContext = createContext({} as any)
+// export const LangContext = createContext({} as any)
 
-interface LanguageContextProviderProps {
-  children: ReactNode
-}
+// interface LanguageContextProviderProps {
+//   children: ReactNode
+// }
 
-import pt from '../../public/pt.json';
-import en from '../../public/en.json';
+// import pt from '../../public/pt.json';
+// import en from '../../public/en.json';
 
-type Translation =  typeof en;
+// type Translation =  typeof en;
 
-export function LanguageContext({children}: LanguageContextProviderProps){
-  const [translation, setTranslation] = useState<Translation>();
+// export function LanguageContext({children}: LanguageContextProviderProps){
+//   const [translation, setTranslation] = useState<Translation>();
 
-  // function changeTranslation(){
-  //   setTranslation();
-  // }
+//   // function changeTranslation(){
+//   //   setTranslation();
+//   // }
 
-  return(
-    <>
-    {children}
-    </>
-  )
-}
+//   return(
+//     <>
+//     {children}
+//     </>
+//   )
+// }
