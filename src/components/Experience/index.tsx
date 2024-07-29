@@ -12,10 +12,6 @@ export function Experience(){
     once: true
   });
 
-  useEffect(()=>{
-    console.log(isInView)
-  },[isInView])
-
   const mainControls = useAnimation();
 
   useEffect(()=>{

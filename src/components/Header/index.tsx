@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderContent, MeContainer, ScrollDownLink } from "./styles";
+import { HeaderContainer, HeaderContent, MeContainer } from "./styles";
 import { Cta } from "./components/Cta/index";
 import { HeaderSocial } from "./components/HeaderSocial";
 
@@ -6,8 +6,9 @@ import ME from '../../assets/ME.png'
 
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { ThemeSelect } from "../ThemeSelect";
 
-export function Header(){
+export function Header({themeSelect}:ThemeSelect){
   const ref = useRef(null);
   const isInView = useInView(ref,{
     once: true
@@ -46,7 +47,7 @@ export function Header(){
           <img src={ME} alt="me" />
         </MeContainer>
 
-        <ScrollDownLink>Scroll Down</ScrollDownLink>
+        <ThemeSelect themeSelect={themeSelect}/>
       </HeaderContent>
     </HeaderContainer>
   )

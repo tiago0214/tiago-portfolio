@@ -46,7 +46,7 @@ export const MeContainer = styled.div`
   }
 `
 
-export const ScrollDownLink = styled.a`
+export const ThemeContainer = styled.div`
   position: absolute;
   right: -2.3rem;
   bottom: 5rem;

@@ -7,7 +7,7 @@ export const BubblesContainer = styled.div`
 
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 ` 
 interface BubblesProps {
   speed: number;
@@ -26,24 +26,24 @@ export const BubbleSpan = styled.span<BubblesProps>`
 
     width: 20px;
     height: 20px;
-    background: #4fc3dc;
+    background: ${props => props.theme.primary};
     margin: 0 10px;
     border-radius: 50%;
-    box-shadow: 0 0 100px 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    box-shadow: inset 0 0 100px 10px ${props => props.theme.primary}, 0 0 50px ${props => props.theme.primary}, 0 0 100px ${props => props.theme.primary};
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / ${props => props.speed});
 
     &:nth-child(even){
-      background: #64CCC5;
-      box-shadow: 0 0 100px 10px #64CCC544, 0 0 50px #64CCC5, 0 0 100px #64CCC5;
+      background: ${props => props.theme["bg-variant"]};
+      box-shadow:inset 0 0 100px 10px ${props => props.theme["bg-variant"]}, 0 0 50px ${props => props.theme["bg-variant"]}, 0 0 100px ${props => props.theme["bg-variant"]};
     }
 
     @keyframes animate{
       0%{
-        transform: translateY(100vh) scale(0);
+        transform: translateY(0vh) scale(0.1);
       }
       100%{
-        transform: translateY(10vh) scale(1);
+        transform: translateY(100vh) scale(0.8);
       }
     }
 `

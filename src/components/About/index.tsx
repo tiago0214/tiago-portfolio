@@ -13,10 +13,6 @@ export function About(){
     once: true
   });
 
-  useEffect(()=>{
-    console.log(isInView)
-  },[isInView])
-
   const mainControls = useAnimation();
 
   useEffect(()=>{

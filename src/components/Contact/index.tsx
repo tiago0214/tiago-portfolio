@@ -43,10 +43,6 @@ export function Contact(){
   const isInView = useInView(ref,{
     once: true
   });
-
-  useEffect(()=>{
-    console.log(isInView)
-  },[isInView])
   
   const mainControls = useAnimation();
 

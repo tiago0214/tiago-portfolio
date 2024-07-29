@@ -37,10 +37,6 @@ export function Projects(){
     once: true
   });
 
-  useEffect(()=>{
-    console.log(isInView)
-  },[isInView])
-
   const mainControls = useAnimation();
 
   useEffect(()=>{
