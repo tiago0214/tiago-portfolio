@@ -9,7 +9,7 @@ import { Projects } from "./components/Projects/index.tsx";
 import { Contact } from "./components/Contact/index.tsx";
 import { Footer } from "./components/Footer/index.tsx";
 import { Bubbles } from "./components/Bubbles/index.tsx";
-import { LanguageContext } from "./context/index.tsx";
+// import { LanguageContext } from "./context/index.tsx";
 import { useState } from "react";
 
 export function App() {
@@ -43,7 +43,7 @@ export function App() {
   return (
     <ThemeProvider theme={themeColor(themeColorState)}>
       <Bubbles />
-      <LanguageContext >
+      {/* <LanguageContext > */}
         <Header themeSelect={changeTheme}/>
         <NavBar />
         <About />
@@ -51,7 +51,7 @@ export function App() {
         <Projects />
         <Contact />
         <Footer />
-      </LanguageContext>
+      {/* </LanguageContext> */}
       <GlobalStyle />
     </ThemeProvider>
   )
