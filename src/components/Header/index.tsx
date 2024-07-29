@@ -32,7 +32,7 @@ export function Header(){
       }}
       initial="initial"
       animate= {mainControls}
-      // transition={{ duration: 1, delay: 0.2}}
+      transition={{ duration: 1, delay: 0.2}}
     >
       <HeaderContent className="container">
         <h5>Hello I'm</h5>
