@@ -3,9 +3,42 @@ import { AboutContainer, AboutContent, AboutMe, AboutMeImage, AboutParagraph } f
 import ME from '../../assets/about.png'
 import { ArrowCircleRight } from "@phosphor-icons/react";
 
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
+
+
 export function About(){
+  const ref = useRef(null);
+  const isInView = useInView(ref,{
+    once: true
+  });
+
+  useEffect(()=>{
+    console.log(isInView)
+  },[isInView])
+
+  const mainControls = useAnimation();
+
+  useEffect(()=>{
+    if(isInView){
+      mainControls.start('visible')
+    }
+
+  },[isInView,mainControls])
+
+
   return (
-    <section id="about">
+    <motion.section 
+      ref={ref} 
+      variants={{
+        initial: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      initial="initial"
+      animate= {mainControls}
+      transition={{ duration: 1, delay: 0.2}}
+      id="about"
+    >
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
@@ -28,6 +61,6 @@ export function About(){
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </AboutContent>
       </AboutContainer>
-    </section>
+    </motion.section>
   )
 }

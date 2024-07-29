@@ -1,11 +1,45 @@
 import { SealCheck } from "@phosphor-icons/react";
 import { ExperienceContainer, ExperienceContent } from "./styles";
 
+
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
+
+
 export function Experience(){
+  const ref = useRef(null);
+  const isInView = useInView(ref,{
+    once: true
+  });
+
+  useEffect(()=>{
+    console.log(isInView)
+  },[isInView])
+
+  const mainControls = useAnimation();
+
+  useEffect(()=>{
+    if(isInView){
+      mainControls.start('visible')
+    }
+
+  },[isInView,mainControls])
+
+
   const colorIcon = '#64CCC5';
 
   return (
-    <section id="experience">
+    <motion.section 
+      ref={ref} 
+      variants={{
+        initial: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      initial="initial"
+      animate= {mainControls}
+      transition={{ duration: 1, delay: 0.2}}
+      id="experience"
+    >
       <h5>Skills That I Have</h5>
       <h2>My Experience</h2>
 
@@ -76,6 +110,6 @@ export function Experience(){
           </ExperienceContent>
         </div>
       </ExperienceContainer>
-    </section>
+    </motion.section>
   )
 }

@@ -3,11 +3,16 @@ import { ContactContainer, ContactForm, ContactOption, ContactOptions } from "./
 import { useForm } from "react-hook-form";
 
 import { message } from 'antd';
+
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
+
 interface DataForm {
   name: string
   email: string
   message: string
 }
+
 
 export function Contact(){
   const { register, handleSubmit, reset } = useForm<DataForm>();
@@ -34,8 +39,37 @@ export function Contact(){
     }
   }
 
+  const ref = useRef(null);
+  const isInView = useInView(ref,{
+    once: true
+  });
+
+  useEffect(()=>{
+    console.log(isInView)
+  },[isInView])
+  
+  const mainControls = useAnimation();
+
+  useEffect(()=>{
+    if(isInView){
+      mainControls.start('visible')
+    }
+
+  },[isInView,mainControls])
+
+
   return (
-    <section id="contact">
+    <motion.section 
+      ref={ref} 
+      variants={{
+        initial: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      initial="initial"
+      animate= {mainControls}
+      transition={{ duration: 1, delay: 0.2}}
+      id="contact"
+    >
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
@@ -78,6 +112,6 @@ export function Contact(){
           <button type="submit" className="btn btn-primary">Send Message</button>
         </ContactForm>
       </ContactContainer>
-    </section>
+    </motion.section >
   )
 }

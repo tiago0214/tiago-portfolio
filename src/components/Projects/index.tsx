@@ -1,5 +1,8 @@
 import { ProjectItem, ProjectItemCta, ProjectItemImage, ProjectsContainer } from "./styles";
 
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
+
 import IMG1 from '../../assets/projectsImg/beauty.png'
 import IMG2 from '../../assets/projectsImg/portfolio.png'
 
@@ -27,9 +30,38 @@ interface DataProps {
   deploy?: string
 }
 
+
 export function Projects(){
+  const ref = useRef(null);
+  const isInView = useInView(ref,{
+    once: true
+  });
+
+  useEffect(()=>{
+    console.log(isInView)
+  },[isInView])
+
+  const mainControls = useAnimation();
+
+  useEffect(()=>{
+    if(isInView){
+      mainControls.start('visible')
+    }
+
+  },[isInView,mainControls])
+
   return (
-    <section id="projects">
+    <motion.section 
+      ref={ref} 
+      variants={{
+        initial: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      initial="initial"
+      animate= {mainControls}
+      transition={{ duration: 1, delay: 0.2}}
+      id="projects"
+    >
       <h5>My Recent</h5>
       <h2>Projects</h2>
 
@@ -50,6 +82,6 @@ export function Projects(){
         }
         
       </ProjectsContainer>
-    </section>
+    </motion.section>
   )
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from 'framer-motion'
 
 export const CtaContainer = styled.div`
   margin-top: 2.5rem;
@@ -7,4 +8,4 @@ export const CtaContainer = styled.div`
   justify-content: center;
 `;
 
-export const CtaLink = styled.a``;
+export const CtaLink = styled(motion.a)``;
