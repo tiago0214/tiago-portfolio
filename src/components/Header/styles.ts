@@ -35,7 +35,7 @@ export const MeContainer = styled.div`
 
   box-shadow:inset 0 0 5px 2px ${props => props.theme["color-bg"]};
 
-  background: linear-gradient(45deg,#D4F1F490,#75E6DA90,#BFD7ED90,#60A3D990,#21B6A890,#A3EBB190);
+  background: linear-gradient(45deg,#D4F1F4,#75E6DA,#BFD7ED,#60A3D9,#21B6A8,#A3EBB1);
   background-size: 500% 500%;
   animation: color 12s ease-in-out infinite alternate;
 
