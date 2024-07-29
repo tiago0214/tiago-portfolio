@@ -8,10 +8,13 @@ import { Experience } from "./components/Experience/index.tsx";
 import { Projects } from "./components/Projects/index.tsx";
 import { Contact } from "./components/Contact/index.tsx";
 import { Footer } from "./components/Footer/index.tsx";
+import { Bubbles } from "./components/Bubbles/index.tsx";
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
+      <Bubbles />
+
       <Header />
       <NavBar />
       <About />
