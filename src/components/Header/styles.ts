@@ -54,4 +54,10 @@ export const ScrollContainer = styled.a`
   font-size: 0.9rem;
   font-weight: 200;
   cursor: default;
+
+  @media screen and (max-width: 600px){
+    &{
+      display: none;
+    }
+  }
 `

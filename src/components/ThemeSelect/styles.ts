@@ -33,9 +33,4 @@ export const ThemeContainer = styled.div`
   gap: 2px;
   cursor: pointer;
 
-  @media screen and (max-width: 600px){
-    &{
-      display: none;
-    }
-  }
 `
