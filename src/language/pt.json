@@ -1,8 +1,8 @@
 {
   "home":{
-    "welcome": "Olá, eu sou",
+    "welcome": "Olá, meu nome é",
     "about": "Sobre mim",
-    "title": "Desenvolvedor Fullstack",
+    "title": "Sou Desenvolvedor Fullstack",
     "buttonCv": "Meu CV",
     "buttonTalk": "Vamos Conversar"
   },
