@@ -48,7 +48,7 @@ export const MeContainer = styled.div`
 
 export const ScrollContainer = styled.a`
   position: absolute;
-  bottom: 2rem;
+  bottom: 2.6rem;
   right: -2.3rem;
   font-size: 0.9rem;
   font-weight: 200;
