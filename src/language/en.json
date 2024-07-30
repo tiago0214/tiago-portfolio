@@ -2,7 +2,7 @@
   "home":{
     "welcome": "Hello I'm",
     "title": "Fullstack Developer",
-    "buttonCv": "My CV",
+    "buttonCv": "View CV",
     "buttonTalk": "Let's Talk"
   },
   "about":{
