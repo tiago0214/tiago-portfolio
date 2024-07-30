@@ -1,12 +1,17 @@
 import { CtaLink, CtaContainer } from "./styles";
 
 import CV from '../../../../assets/cv.pdf';
+import { useContext } from "react";
+import { AppContex } from "../../../../context";
 
 export function Cta(){
+
+  const {idiomPage} = useContext(AppContex);
+
   return (
     <CtaContainer >
-      <CtaLink whileHover={{scale:1.1}} href={CV} className="btn" target="_blank">View CV</CtaLink>
-      <CtaLink whileHover={{scale:1.1}} href="#contact" className="btn btn-primary">Let's Talk</CtaLink>
+      <CtaLink whileHover={{scale:1.1}} href={CV} className="btn" target="_blank">{idiomPage.home.buttonCv}</CtaLink>
+      <CtaLink whileHover={{scale:1.1}} href="#contact" className="btn btn-primary">{idiomPage.home.buttonTalk}</CtaLink>
     </CtaContainer>
   )
 }

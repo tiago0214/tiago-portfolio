@@ -5,7 +5,8 @@ import { useForm } from "react-hook-form";
 import { message } from 'antd';
 
 import { motion, useInView, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { AppContex } from "../../context";
 
 interface DataForm {
   name: string
@@ -15,6 +16,8 @@ interface DataForm {
 
 
 export function Contact(){
+  const { idiomPage } = useContext(AppContex);
+
   const { register, handleSubmit, reset } = useForm<DataForm>();
 
   async function dataForm (data:DataForm){
@@ -31,9 +34,9 @@ export function Contact(){
       if(response.status !== 201)
           throw new Error('erro')
 
-      return message.success("Message Sent! I'll get back to you soon.");
+      return message.success(idiomPage.popUpMessage.sucess);
     }catch{
-      return message.error("Something went wrong.");
+      return message.error(idiomPage.popUpMessage.error);
     }finally{
       reset();
     }
@@ -66,8 +69,8 @@ export function Contact(){
       transition={{ duration: 1, delay: 0.2}}
       id="contact"
     >
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5>{idiomPage.contact.getInTouch}</h5>
+      <h2>{idiomPage.contact.contactMe}</h2>
 
       <ContactContainer className="container">
         <ContactOptions>
@@ -75,37 +78,37 @@ export function Contact(){
             <Envelope size={24}/>
             <h4>Email</h4>
             <h5>tiago0214@gmail.com</h5>
-            <a href="mailto:tiago0214@gmail.com" target="_blank">Send a Message</a>
+            <a href="mailto:tiago0214@gmail.com" target="_blank">{idiomPage.contact.sendAMessage}</a>
           </ContactOption>
           <ContactOption>
             <WhatsappLogo size={24}/>
             <h4>WhatsApp</h4>
             <h5>+55(64)99282-9680</h5>
-            <a href="https://api.whatsapp.com/send?phone=5564992829680" target="_blank">Send a Message</a>
+            <a href="https://api.whatsapp.com/send?phone=5564992829680" target="_blank">{idiomPage.contact.sendAMessage}</a>
           </ContactOption>
         </ContactOptions>
         {/* Form */}
         <ContactForm action="" onSubmit={handleSubmit(dataForm)}>
           <input 
             type="text" 
-            placeholder="Your Name" 
+            placeholder={idiomPage.placeholder.yourName}
             required
             {...register('name')}
           />
           <input 
             type="text" 
-            placeholder="Your Email" 
+            placeholder={idiomPage.placeholder.yourEmail}
             required
             {...register('email')}
           />
           <textarea 
             rows={7} 
-            placeholder="Your Message" 
+            placeholder={idiomPage.placeholder.yourMessage} 
             required
             {...register('message')}
           />
           
-          <button type="submit" className="btn btn-primary">Send Message</button>
+          <button type="submit" className="btn btn-primary">{idiomPage.contact.sendMessageButton}</button>
         </ContactForm>
       </ContactContainer>
     </motion.section >

@@ -2,11 +2,14 @@ import { SealCheck } from "@phosphor-icons/react";
 import { ExperienceContainer, ExperienceContent } from "./styles";
 
 import { motion, useInView, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { ThemeSelectProps } from "../ThemeSelect";
+import { AppContex } from "../../context";
 
 
 export function Experience({activeColor}:ThemeSelectProps){
+  const { idiomPage } = useContext(AppContex);
+
   const ref = useRef(null);
   const isInView = useInView(ref,{
     once: true
@@ -36,12 +39,12 @@ export function Experience({activeColor}:ThemeSelectProps){
       transition={{ duration: 1, delay: 0.2}}
       id="experience"
     >
-      <h5>Skills That I Have</h5>
-      <h2>My Experience</h2>
+      <h5>{idiomPage.experience.skillsThatIHave}</h5>
+      <h2>{idiomPage.experience.myExperience}</h2>
 
       <ExperienceContainer className="container">
         <div>
-          <h3>Frontend Development</h3>
+          <h3>{idiomPage.experience.frontendDev}</h3>
 
           <ExperienceContent>
             <article>
@@ -72,7 +75,7 @@ export function Experience({activeColor}:ThemeSelectProps){
         </div>
 
         <div>
-          <h3>Backend Development</h3>
+          <h3>{idiomPage.experience.backendDev}</h3>
 
           <ExperienceContent>
             <article>

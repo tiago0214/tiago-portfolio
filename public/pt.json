@@ -1,7 +1,53 @@
 {
-  "welcome": "Olá, eu sou",
-  "about": "Sobre mim",
-  "title": "Desenvolvedor Fullstack",
-  "buttonCv": "Veja CV",
-  "buttonTalk": "Vamos Conversar"
+  "home":{
+    "welcome": "Olá, eu sou",
+    "about": "Sobre mim",
+    "title": "Desenvolvedor Fullstack",
+    "buttonCv": "Veja o meu CV",
+    "buttonTalk": "Vamos Conversar"
+  },
+  "about":{
+    "getToKnow" : "Conheça",
+    "aboutMe": "Sobre Mim",
+    "text1": "Olá!",
+    "text2": "Sou desenvolvedor web e atualmente estou cursando Engenharia de Software.",
+    "text3": "Eu me especializei como desenvolvedor full-stack, então trabalho com React no frontend e uso Node.js e C# no backend. Quando se trata de JavaScript, costumo usar TypeScript.",
+    "text4" : "Moro no Brasil, mas sou bastante flexível quanto a trabalhar remotamente ou no presencial, em qualquer lugar. Falo tanto português quanto inglês.",
+    "letsTalk": "Vamos Conversar"
+  },
+  "experience":{
+    "skillsThatIHave": "Habilidades Que Eu Tenho",
+    "myExperience": "Minha Experiência",
+    "frontendDev" : "Desenvolvimento Frontend",
+    "backendDev": "Desenvolvimento Backend"
+  },
+  "projects":{
+    "myRecent": "Meus Recentes",
+    "projects" : "Projetos",
+    "projOneName" : "Site de Empresa de Beleza",
+    "projTwoName" : "Portfólio Antigo"
+  },
+  "contact":{
+    "getInTouch" : "Entre em Contato",
+    "contactMe" : "Me Contate",
+    "sendAMessage": "Envie uma Mensagem",
+    "sendMessageButton": "Enviar Mensagem"
+  },
+  "footer":{
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects" : "Projetos",
+    "contact": "Contato",
+    "copy": "Todos os Direitos Reservados."
+  },
+  "placeholder":{
+    "yourEmail": "Seu Email",
+    "yourName" : "Seu Nome",
+    "yourMessage": "Sua Messagem"
+  },
+  "popUpMessage":{
+    "sucess": "Mensagem enviada! Entrarei em contato em breve.",
+    "error": "Alguma coisa deu errado."
+  }
 }

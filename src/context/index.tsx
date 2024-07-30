@@ -1,20 +1,45 @@
-// import { createContext ,ReactNode, useState } from 'react';
+import { createContext ,ReactNode, useState } from 'react';
 
-// interface AppContextType {
-//   activeElement: string
-//   changeActiveElement : (element:string) => void
-// }
+import en from '../../public/en.json'
+import pt from '../../public/pt.json'
 
-// export const AppContex  = createContext({} as AppContextType);
+type pageIdiom = typeof en;
 
-// interface ActiveContextProviderProps {
-//   children: ReactNode
-// }
+interface LanguageTypeContext{
+  languageType: string
+  setLanguageType: (idiom:string) => void
+  idiomPage: pageIdiom
+}
 
-// export function AppContextProvider({children}:ActiveContextProviderProps){
-//   return (
-//     <AppContex.Provider>
-//       {children}
-//     </AppContex.Provider>
-//   )
-// }
+export const AppContex  = createContext({} as LanguageTypeContext);
+
+interface ActiveContextProviderProps {
+  children: ReactNode
+}
+
+export function AppContextProvider({children}:ActiveContextProviderProps){
+ const [languageType, setLanguageType] = useState('en');
+
+  function idiom ():pageIdiom{
+    switch(languageType){
+      case 'en':
+        return en;
+      case 'pt':
+        return pt;
+      default :
+        return en  
+    }
+  }
+
+  const idiomPage = idiom()
+
+  return (
+    <AppContex.Provider value={{
+      languageType,
+      setLanguageType,
+      idiomPage
+    }}>
+      {children}
+    </AppContex.Provider>
+  )
+}

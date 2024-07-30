@@ -10,7 +10,7 @@ import { Contact } from "./components/Contact/index.tsx";
 import { Footer } from "./components/Footer/index.tsx";
 import { Bubbles } from "./components/Bubbles/index.tsx";
 import { useState } from "react";
-// import { AppContextProvider } from "./context/index.tsx";
+import { AppContextProvider } from "./context/index.tsx";
 
 export function App() {
   const [themeColorState, setThemeColorState] = useState<ColorTheme>('default');
@@ -46,7 +46,7 @@ export function App() {
  
   return (
     <ThemeProvider theme={activeTheme}>
-      {/* <AppContextProvider> */}
+      <AppContextProvider>
         <Bubbles />
         <Header />
         <NavBar themeSelect={changeTheme} activeColor={activeColor}/>
@@ -55,7 +55,7 @@ export function App() {
         <Projects />
         <Contact />
         <Footer />
-      {/* </AppContextProvider> */}
+      </AppContextProvider>
       <GlobalStyle />
     </ThemeProvider>
   )

@@ -48,11 +48,14 @@ export const MeContainer = styled.div`
 
 export const ScrollContainer = styled.a`
   position: absolute;
-  bottom: 4.5rem;
+  bottom: 2rem;
   right: -2.3rem;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
   font-size: 0.9rem;
   font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   cursor: default;
 
   @media screen and (max-width: 600px){
@@ -61,3 +64,12 @@ export const ScrollContainer = styled.a`
     }
   }
 `
+
+export const FlagContainer = styled.button`
+  display: block;
+  width: 30px;
+  border: solid 2px black;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+`;

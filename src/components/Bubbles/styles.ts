@@ -43,7 +43,7 @@ export const BubbleSpan = styled.span<BubblesProps>`
         transform: translateY(0vh) scale(0.1);
       }
       100%{
-        transform: translateY(100vh) scale(0.8);
+        transform: translateY(95vh) scale(0.9);
       }
     }
 `

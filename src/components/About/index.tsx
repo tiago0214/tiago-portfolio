@@ -4,10 +4,13 @@ import ME from '../../assets/about.png'
 import { ArrowCircleRight } from "@phosphor-icons/react";
 
 import { motion, useInView, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { AppContex } from "../../context";
 
 
 export function About(){
+  const {idiomPage} = useContext(AppContex);
+
   const ref = useRef(null);
   const isInView = useInView(ref,{
     once: true
@@ -35,8 +38,8 @@ export function About(){
       transition={{ duration: 1, delay: 0.2}}
       id="about"
     >
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h5>{idiomPage.about.getToKnow}</h5>
+      <h2>{idiomPage.about.aboutMe}</h2>
 
       <AboutContainer className="container">
         <AboutMe>
@@ -48,13 +51,13 @@ export function About(){
         <AboutContent>
           <AboutParagraph>
 
-            <p><ArrowCircleRight/> Hi there!</p>
-            <p><ArrowCircleRight/>  I'm a web developer and right now, I'm pursuing a degree in Software Engineering.</p>
-            <p><ArrowCircleRight/>  I've specialized as a full-stack developer, so I work with React on the frontend and use Node.js and C# on the backend. When it comes to JavaScript, I usually go with TypeScript.</p>
-            <p><ArrowCircleRight/> I'm from Brazil, but I'm pretty flexible about working remotely or on-site from just about anywhere. Oh, and I speak both Portuguese and English.</p>
+            <p><ArrowCircleRight/> {idiomPage.about.text1}</p>
+            <p><ArrowCircleRight/>  {idiomPage.about.text2}</p>
+            <p><ArrowCircleRight/>  {idiomPage.about.text3}</p>
+            <p><ArrowCircleRight/>  {idiomPage.about.text4}</p>
 
           </AboutParagraph>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">{idiomPage.about.letsTalk}</a>
         </AboutContent>
       </AboutContainer>
     </motion.section>
