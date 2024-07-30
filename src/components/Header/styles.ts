@@ -50,17 +50,19 @@ export const ScrollContainer = styled.a`
   position: absolute;
   bottom: 2rem;
   right: -2.3rem;
-  /* transform: rotate(90deg); */
   font-size: 0.9rem;
   font-weight: 200;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 8px;
   cursor: default;
 
   @media screen and (max-width: 600px){
     &{
-      display: none;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 105%;
+      flex-direction: row;
     }
   }
 `
@@ -68,8 +70,14 @@ export const ScrollContainer = styled.a`
 export const FlagContainer = styled.button`
   display: block;
   width: 30px;
-  border: solid 2px black;
+  border: solid 2px ${props => props.theme.primary};
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
+
+  @media screen and (max-width: 600px){
+    &{
+      width: 37px; 
+    }
+  }
 `;

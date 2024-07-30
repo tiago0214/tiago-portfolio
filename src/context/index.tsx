@@ -1,7 +1,7 @@
 import { createContext ,ReactNode, useState } from 'react';
 
-import en from '../../public/en.json'
-import pt from '../../public/pt.json'
+import en from '../language/en.json'
+import pt from '../language/pt.json'
 
 type pageIdiom = typeof en;
 
