@@ -13,6 +13,9 @@ export const NavBarContainer = styled.nav`
   gap: 0.8rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
+
+  transition: ${props => props.theme.transition};
+
 `;
 
 export const NavBarLink = styled.a`
@@ -22,6 +25,7 @@ export const NavBarLink = styled.a`
   display: flex;
   color: ${props => props.theme.light};
   font-size: 1.1rem;
+  transition: ${props => props.theme.transition};
 
   &:hover{
     background: rgba(0,0,0,0.3);

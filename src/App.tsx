@@ -13,9 +13,13 @@ import { Bubbles } from "./components/Bubbles/index.tsx";
 import { useState } from "react";
 
 export function App() {
+  const [themeColorState, setThemeColorState] = useState<ColorTheme>('default');
+
   type ColorTheme = 'default' | 'orange' | 'beige' | 'blue' | 'purple';
 
   type ColorThemeReturn = typeof defaultTheme;
+  
+
 
   function themeColor (props:ColorTheme): ColorThemeReturn{
     switch(props){
@@ -34,20 +38,22 @@ export function App() {
     }
   }
 
+  const activeTheme = themeColor(themeColorState);
+  const activeColor = activeTheme["primary-variant"]
+
   function changeTheme(theme:ColorTheme){
     return setThemeColorState(theme)
   }
 
-  const [themeColorState, setThemeColorState] = useState<ColorTheme>('default');
  
   return (
-    <ThemeProvider theme={themeColor(themeColorState)}>
+    <ThemeProvider theme={activeTheme}>
       <Bubbles />
       {/* <LanguageContext > */}
-        <Header themeSelect={changeTheme}/>
-        <NavBar />
+        <Header />
+        <NavBar themeSelect={changeTheme} activeColor={activeColor}/>
         <About />
-        <Experience />
+        <Experience activeColor={activeColor}/>
         <Projects />
         <Contact />
         <Footer />

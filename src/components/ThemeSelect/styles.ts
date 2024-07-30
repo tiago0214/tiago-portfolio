@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 interface ColorsButtonProps {
   variant: 'default' | 'orange' | 'beige' | 'blue' | 'purple';
  }
@@ -16,20 +17,22 @@ export const ButtonSelect = styled.button<ColorsButtonProps>`
   padding: 10px;
   border-radius: 50%;
   border: 2px solid black;
-  margin-left: 5px;
   background-color: ${props => colors[props.variant]};
+  transition: ${props => props.theme.transition};
 
   cursor: pointer;
 `;
 
 export const ThemeContainer = styled.div`
   position: absolute;
-  right: -2.3rem;
-  bottom: 2rem;
+  bottom: 4rem;
   font-weight: 300;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
+  gap: 2px;
+  transition: ${props => props.theme.transition};
+
   @media screen and (max-width: 600px){
     &{
       display: none;

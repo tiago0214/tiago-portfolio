@@ -1,12 +1,12 @@
 import { SealCheck } from "@phosphor-icons/react";
 import { ExperienceContainer, ExperienceContent } from "./styles";
 
-
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { ThemeSelectProps } from "../ThemeSelect";
 
 
-export function Experience(){
+export function Experience({activeColor}:ThemeSelectProps){
   const ref = useRef(null);
   const isInView = useInView(ref,{
     once: true
@@ -22,7 +22,7 @@ export function Experience(){
   },[isInView,mainControls])
 
 
-  const colorIcon = '#64CCC5';
+  const colorIcon = activeColor;
 
   return (
     <motion.section 
