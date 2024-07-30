@@ -1,26 +1,20 @@
-// import { createContext, ReactNode, useState } from "react";
+// import { createContext ,ReactNode, useState } from 'react';
 
-// export const LangContext = createContext({} as any)
+// interface AppContextType {
+//   activeElement: string
+//   changeActiveElement : (element:string) => void
+// }
 
-// interface LanguageContextProviderProps {
+// export const AppContex  = createContext({} as AppContextType);
+
+// interface ActiveContextProviderProps {
 //   children: ReactNode
 // }
 
-// import pt from '../../public/pt.json';
-// import en from '../../public/en.json';
-
-// type Translation =  typeof en;
-
-// export function LanguageContext({children}: LanguageContextProviderProps){
-//   const [translation, setTranslation] = useState<Translation>();
-
-//   // function changeTranslation(){
-//   //   setTranslation();
-//   // }
-
-//   return(
-//     <>
-//     {children}
-//     </>
+// export function AppContextProvider({children}:ActiveContextProviderProps){
+//   return (
+//     <AppContex.Provider>
+//       {children}
+//     </AppContex.Provider>
 //   )
 // }

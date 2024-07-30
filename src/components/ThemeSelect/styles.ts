@@ -14,7 +14,7 @@ const colors ={
 }
 
 export const ButtonSelect = styled.button<ColorsButtonProps>`
-  padding: 10px;
+  padding: 11px;
   border-radius: 50%;
   border: 2px solid black;
   background-color: ${props => colors[props.variant]};
@@ -26,11 +26,12 @@ export const ButtonSelect = styled.button<ColorsButtonProps>`
 export const ThemeContainer = styled.div`
   position: absolute;
   bottom: 4rem;
+  right: 35px;
   font-weight: 300;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
   cursor: pointer;
 
 `

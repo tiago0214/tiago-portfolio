@@ -9,8 +9,8 @@ import { Projects } from "./components/Projects/index.tsx";
 import { Contact } from "./components/Contact/index.tsx";
 import { Footer } from "./components/Footer/index.tsx";
 import { Bubbles } from "./components/Bubbles/index.tsx";
-// import { LanguageContext } from "./context/index.tsx";
 import { useState } from "react";
+// import { AppContextProvider } from "./context/index.tsx";
 
 export function App() {
   const [themeColorState, setThemeColorState] = useState<ColorTheme>('default');
@@ -18,8 +18,6 @@ export function App() {
   type ColorTheme = 'default' | 'orange' | 'beige' | 'blue' | 'purple';
 
   type ColorThemeReturn = typeof defaultTheme;
-  
-
 
   function themeColor (props:ColorTheme): ColorThemeReturn{
     switch(props){
@@ -48,8 +46,8 @@ export function App() {
  
   return (
     <ThemeProvider theme={activeTheme}>
-      <Bubbles />
-      {/* <LanguageContext > */}
+      {/* <AppContextProvider> */}
+        <Bubbles />
         <Header />
         <NavBar themeSelect={changeTheme} activeColor={activeColor}/>
         <About />
@@ -57,7 +55,7 @@ export function App() {
         <Projects />
         <Contact />
         <Footer />
-      {/* </LanguageContext> */}
+      {/* </AppContextProvider> */}
       <GlobalStyle />
     </ThemeProvider>
   )
