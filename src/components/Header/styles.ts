@@ -46,17 +46,12 @@ export const MeContainer = styled.div`
   }
 `
 
-export const ThemeContainer = styled.div`
+export const ScrollContainer = styled.a`
   position: absolute;
+  bottom: 4rem;
   right: -2.3rem;
-  bottom: 5rem;
   transform: rotate(90deg);
-  font-weight: 300;
   font-size: 0.9rem;
-
-  @media screen and (max-width: 600px){
-    &{
-      display: none;
-    }
-  }
+  font-weight: 200;
+  cursor: default;
 `

@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderContent, MeContainer } from "./styles";
+import { HeaderContainer, HeaderContent, MeContainer, ScrollContainer } from "./styles";
 import { Cta } from "./components/Cta/index";
 import { HeaderSocial } from "./components/HeaderSocial";
 
@@ -46,6 +46,9 @@ export function Header(){
           <img src={ME} alt="me" />
         </MeContainer>
 
+        <ScrollContainer>
+          Scrolldown
+        </ScrollContainer>
       </HeaderContent>
     </HeaderContainer>
   )

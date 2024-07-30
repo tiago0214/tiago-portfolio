@@ -31,7 +31,7 @@ export const ThemeContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2px;
-  transition: ${props => props.theme.transition};
+  cursor: pointer;
 
   @media screen and (max-width: 600px){
     &{

@@ -26,6 +26,7 @@ export const NavBarLink = styled.a`
   color: ${props => props.theme.light};
   font-size: 1.1rem;
   transition: ${props => props.theme.transition};
+  cursor: pointer;
 
   &:hover{
     background: rgba(0,0,0,0.3);
