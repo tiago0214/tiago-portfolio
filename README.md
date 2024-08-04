@@ -8,9 +8,6 @@
 3. [Features](#features)
 4. [Installation](#installation)
 5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
 
 ### Introduction
 Welcome to my portfolio! This project showcases my work and skills using modern web technologies. It includes various features to enhance the user experience, such as a theme selector, a contact form, and language selection.
@@ -47,14 +44,3 @@ Welcome to my portfolio! This project showcases my work and skills using modern 
     npm run dev
     ```
 2. Open your browser and navigate to the provided URL (typically `http://localhost:5173`).
-
-### Contributing
-If you have suggestions for improvements, feel free to create an issue or submit a pull request.
-
-### License
-This project is licensed under the MIT License.
-
-### Contact
-Feel free to reach out to me at:
-- Email: tiago0214@gmail.com
-- LinkedIn: [linkedin-profile](linkedin.com/in/tiago-souza-ba234b11a/)
