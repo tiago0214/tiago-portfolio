@@ -26,7 +26,7 @@ export const ContactOption = styled.article`
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
-  border: 1px solid transparent;
+  border: 1px solid black;
   transition: ${props => props.theme.transition};
 
   & > svg{

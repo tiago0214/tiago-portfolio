@@ -24,7 +24,7 @@ export const ProjectItem = styled.article`
   background: ${props => props.theme["bg-variant"]};
   padding: 1.2rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
+  border: 1px solid black;
   transition: ${props => props.theme.transition};
 
   & > h3{

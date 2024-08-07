@@ -96,6 +96,10 @@ export function Experience({activeColor}:ThemeSelectProps){
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
+              <h4>.NET</h4>
+            </article>
+            <article>
+              <SealCheck weight="fill" color={colorIcon}/>
               <h4>MongoDB</h4>
             </article>
             <article>
@@ -104,7 +108,7 @@ export function Experience({activeColor}:ThemeSelectProps){
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>MySQL</h4>
+              <h4>Docker</h4>
             </article>
           </ExperienceContent>
         </div>

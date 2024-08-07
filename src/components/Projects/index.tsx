@@ -5,6 +5,7 @@ import { useContext, useEffect, useRef } from "react";
 
 import IMG1 from '../../assets/projectsImg/beauty.png'
 import IMG2 from '../../assets/projectsImg/portfolio.png'
+import GITHUB from '../../assets/projectsImg/github.jpeg'
 import { AppContex } from "../../context";
 
 
@@ -22,6 +23,20 @@ const data = [
     title: "Old portfolio",
     github: "https://github.com/tiago0214/portfolio_V2",
     deploy:  "https://portfolio-v2-omega-six.vercel.app/"
+  },
+  {
+    id: 3,
+    image : GITHUB,
+    title: "C# project with google API",
+    github: "https://github.com/tiago0214/challenge-google-sheets",
+    deploy:  "https://github.com/tiago0214/challenge-google-sheets"
+  },
+  {
+    id: 4,
+    image : GITHUB,
+    title: "decoding message in nodeJS",
+    github: "https://github.com/tiago0214/encoding-challenge",
+    deploy:  "https://github.com/tiago0214/encoding-challenge"
   }
 ]
 interface DataProps {
@@ -74,7 +89,8 @@ export function Projects(){
                 <h3>{title}</h3>
                 <ProjectItemCta> 
                   <a href={github} className="btn" target="_blank">Github</a>
-                  <a href={deploy} className="btn btn-primary" target="_blank">Deploy</a>
+                  
+                  <a href={deploy} className="btn btn-primary" target="_blank">Demo</a>
                 </ProjectItemCta>
               </ProjectItem>
             )

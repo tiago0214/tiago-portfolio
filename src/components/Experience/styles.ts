@@ -21,7 +21,7 @@ export const ExperienceContainer = styled.div`
     background: ${props => props.theme["bg-variant"]};
     padding: 2.4rem 5rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 1px solid black;
     transition: ${props => props.theme.transition};
 
     & > h3 {
