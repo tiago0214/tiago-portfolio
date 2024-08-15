@@ -41,8 +41,6 @@ export function Header(){
       transition={{ duration: 1, delay: 0.2}}
     >
       <HeaderContent className="container">
-        {/* <h5>Hello I'm</h5>
-        <h1>Tiago Dias</h1> */}
         <h5>{idiomPage.home.welcome}</h5>
         <h1>Tiago Dias</h1>
         <h5 className="text-light">{idiomPage.home.title}</h5>
