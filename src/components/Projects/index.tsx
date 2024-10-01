@@ -2,11 +2,14 @@ import { ProjectItem, ProjectItemCta, ProjectItemImage, ProjectsContainer } from
 
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useContext, useEffect, useRef } from "react";
+import { AppContex } from "../../context";
+
 
 import IMG1 from '../../assets/projectsImg/beauty.png'
 import IMG2 from '../../assets/projectsImg/portfolio.png'
 import GITHUB from '../../assets/projectsImg/github.jpeg'
-import { AppContex } from "../../context";
+import LOGIN from '../../assets/projectsImg/login.png'
+
 
 
 const data = [
@@ -29,14 +32,18 @@ const data = [
     image : GITHUB,
     title: "C# project with google API",
     github: "https://github.com/tiago0214/challenge-google-sheets",
-    deploy:  "https://github.com/tiago0214/challenge-google-sheets"
   },
   {
     id: 4,
     image : GITHUB,
     title: "decoding message in nodeJS",
     github: "https://github.com/tiago0214/encoding-challenge",
-    deploy:  "https://github.com/tiago0214/encoding-challenge"
+  },
+  {
+    id: 5,
+    image: LOGIN,
+    title: "Login web page",
+    github: "https://github.com/tiago0214/login-page"
   }
 ]
 interface DataProps {
@@ -90,7 +97,7 @@ export function Projects(){
                 <ProjectItemCta> 
                   <a href={github} className="btn" target="_blank">Github</a>
                   
-                  <a href={deploy} className="btn btn-primary" target="_blank">Demo</a>
+                  {deploy && <a href={deploy} className="btn btn-primary" target="_blank">Deploy</a>}
                 </ProjectItemCta>
               </ProjectItem>
             )
