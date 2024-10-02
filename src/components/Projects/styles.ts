@@ -27,8 +27,11 @@ export const ProjectItem = styled.article`
   border: 1px solid black;
   transition: ${props => props.theme.transition};
 
-  & > h3{
-    margin: 2rem 0 2rem;
+  & > p{
+    margin-top: 1rem;
+    font-weight: 100;
+    line-height: 1.2;
+    text-align: justify
   }
 
   &:hover{
