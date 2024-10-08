@@ -1,52 +1,52 @@
 {
-  "home":{
+  "home": {
     "welcome": "Olá, meu nome é",
     "about": "Sobre mim",
     "title": "Sou Desenvolvedor Fullstack",
     "buttonCv": "Meu CV",
     "buttonTalk": "Vamos Conversar"
   },
-  "about":{
-    "getToKnow" : "Conheça",
+  "about": {
+    "getToKnow": "Conheça",
     "aboutMe": "Sobre Mim",
     "text1": "Olá!",
-    "text2": "Sou desenvolvedor web e atualmente estou cursando Engenharia de Software.",
+    "text2": "Sou desenvolvedor web e atualmente estou cursando Ciências da Computação.",
     "text3": "Trabalho como desenvolvedor full-stack, especializado em linguagens de backend como TypeScript/Node.js e C#, além de desenvolvimento frontend com React.",
-    "text4" : "Moro no Brasil, mas sou bastante flexível quanto a trabalhar remotamente ou no presencial, em qualquer lugar. Falo tanto português quanto inglês.",
+    "text4": "Moro no Brasil, mas sou bastante flexível quanto a trabalhar remotamente ou no presencial, em qualquer lugar. Falo tanto português quanto inglês.",
     "letsTalk": "Vamos Conversar"
   },
-  "experience":{
+  "experience": {
     "skillsThatIHave": "Habilidades Que Eu Tenho",
     "myExperience": "Minha Experiência",
-    "frontendDev" : "Desenvolvimento Frontend",
+    "frontendDev": "Desenvolvimento Frontend",
     "backendDev": "Desenvolvimento Backend"
   },
-  "projects":{
+  "projects": {
     "myRecent": "Meus Recentes",
-    "projects" : "Projetos",
-    "projOneName" : "Site de Empresa de Beleza",
-    "projTwoName" : "Portfólio Antigo"
+    "projects": "Projetos",
+    "projOneName": "Site de Empresa de Beleza",
+    "projTwoName": "Portfólio Antigo"
   },
-  "contact":{
-    "getInTouch" : "Entre em Contato",
-    "contactMe" : "Me Contate",
+  "contact": {
+    "getInTouch": "Entre em Contato",
+    "contactMe": "Me Contate",
     "sendAMessage": "Envie uma Mensagem",
     "sendMessageButton": "Enviar Mensagem"
   },
-  "footer":{
+  "footer": {
     "home": "Início",
     "about": "Sobre",
     "experience": "Experiência",
-    "projects" : "Projetos",
+    "projects": "Projetos",
     "contact": "Contato",
     "copy": "Todos os Direitos Reservados."
   },
-  "placeholder":{
+  "placeholder": {
     "yourEmail": "Seu Email",
-    "yourName" : "Seu Nome",
+    "yourName": "Seu Nome",
     "yourMessage": "Sua Messagem"
   },
-  "popUpMessage":{
+  "popUpMessage": {
     "sucess": "Mensagem enviada! Entrarei em contato em breve.",
     "error": "Alguma coisa deu errado."
   }

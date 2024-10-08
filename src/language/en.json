@@ -1,51 +1,51 @@
 {
-  "home":{
+  "home": {
     "welcome": "Hello, My name is",
     "title": "I'm a Fullstack Developer",
     "buttonCv": "View CV",
     "buttonTalk": "Let's Talk"
   },
-  "about":{
-    "getToKnow" : "Get To Know",
+  "about": {
+    "getToKnow": "Get To Know",
     "aboutMe": "About Me",
     "text1": "Hi there!",
-    "text2": "I'm a web developer and right now, I'm pursuing a degree in Software Engineering.",
+    "text2": "I'm a web developer and right now, I'm pursuing a degree in Computer Science.",
     "text3": "I work as a full-stack developer, specializing in backend languages like TypeScript/Node.js and C#, as well as frontend development with React.",
-    "text4" : "I'm from Brazil, but I'm pretty flexible about working remotely or in person from anywhere. I speak both Portuguese and English.",
+    "text4": "I'm from Brazil, but I'm pretty flexible about working remotely or in person from anywhere. I speak both Portuguese and English.",
     "letsTalk": "Let's Talk"
   },
-  "experience":{
+  "experience": {
     "skillsThatIHave": "Skills That I Have",
     "myExperience": "My Experience",
-    "frontendDev" : "Frontend Development",
+    "frontendDev": "Frontend Development",
     "backendDev": "Backend Development"
   },
-  "projects":{
+  "projects": {
     "myRecent": "My Recent",
-    "projects" : "Projects",
-    "projOneName" : "Beauty Company Web Site",
-    "projTwoName" : "Old Portfolio"
+    "projects": "Projects",
+    "projOneName": "Beauty Company Web Site",
+    "projTwoName": "Old Portfolio"
   },
-  "contact":{
-    "getInTouch" : "Get In Touch",
-    "contactMe" : "Contact Me",
+  "contact": {
+    "getInTouch": "Get In Touch",
+    "contactMe": "Contact Me",
     "sendAMessage": "Send a Message",
     "sendMessageButton": "Send Message"
   },
-  "footer":{
+  "footer": {
     "home": "Home",
     "about": "About",
     "experience": "Experience",
-    "projects" : "Projects",
+    "projects": "Projects",
     "contact": "Contact",
     "copy": "All Rights Reserved."
   },
-  "placeholder":{
+  "placeholder": {
     "yourEmail": "Your Email",
-    "yourName" : "Your Name",
+    "yourName": "Your Name",
     "yourMessage": "Your Message"
   },
-  "popUpMessage":{
+  "popUpMessage": {
     "sucess": "Message Sent! I'll get back to you soon.",
     "error": "Something went wrong."
   }
