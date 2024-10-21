@@ -9,9 +9,9 @@
     "getToKnow": "Get To Know",
     "aboutMe": "About Me",
     "text1": "Hi there!",
-    "text2": "I'm a web developer and right now, I'm pursuing a degree in Computer Science.",
-    "text3": "I work as a full-stack developer, specializing in backend languages like TypeScript/Node.js and C#, as well as frontend development with React.",
-    "text4": "I'm from Brazil, but I'm pretty flexible about working remotely or in person from anywhere. I speak both Portuguese and English.",
+    "text2": "I'm a software developer with a strong foundation in C# and TypeScript. I have practical experience with .NET frameworks such as ASP.NET and Entity Framework, and in the JavaScript ecosystem, I've worked with Fastify, Express, and React. I've also worked with both relational databases like Postgres and SQL Server, as well as the non-relational MongoDB.",
+    "text3": "Currently pursuing a Computer Science degree, I'm diving deeper into advanced programming concepts and software engineering. I've also enhanced my skills through numerous online courses and bootcamps, ensuring I stay up-to-date with industry trends.",
+    "text4": "I'm currently focused on expanding my knowledge of C# and cloud applications, as well as exploring various software development methodologies. I strive to be a developer who not only implements solutions but also seeks to understand the underlying concepts. This allows me to not just deliver solutions, but to ensure they are the most suitable for the specific context.",
     "letsTalk": "Let's Talk"
   },
   "experience": {

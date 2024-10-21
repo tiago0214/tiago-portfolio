@@ -11,11 +11,6 @@ export const AboutContainer = styled.div`
       gap: 0;
     }
   }
-  /* @media screen and (max-width: 600px){
-    &{
-      height: 100vh;
-    }
-  } */
 `;
 
 export const AboutMe = styled.div`

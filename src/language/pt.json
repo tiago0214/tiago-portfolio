@@ -10,9 +10,9 @@
     "getToKnow": "Conheça",
     "aboutMe": "Sobre Mim",
     "text1": "Olá!",
-    "text2": "Sou desenvolvedor web e atualmente estou cursando Ciências da Computação.",
-    "text3": "Trabalho como desenvolvedor full-stack, especializado em linguagens de backend como TypeScript/Node.js e C#, além de desenvolvimento frontend com React.",
-    "text4": "Moro no Brasil, mas sou bastante flexível quanto a trabalhar remotamente ou no presencial, em qualquer lugar. Falo tanto português quanto inglês.",
+    "text2": "Sou desenvolvedor de software com conhecimento teórico e prático em C# e Typescript. Atuei com frameworks .NET, ASP.NET, Entity Framework, e na família do JavaScript, atuei com Fastify, Express e React, como também, bancos de dados relacionais: Postgres e SQL Server, e não relacional: mongoDB.",
+    "text3": "Estou cursando ciências da computação, e com isso aproveitando para aprofundar em conceitos mais avançados de programação e engenharia de software. Minhas habilidades foram aperfeiçoadas também através da participação em diversos cursos e bootcamps online, o que me permite que eu me mantenha atualizado com as tendências de mercado.",
+    "text4": "Atualmente estou aprofundando meus conhecimentos em C# e Cloud, e suas aplicações. Como também em metodologias que orientam o desenvolvimento de software. Busco ser um desenvolvedor que não somente aplica uma solução, mas que busca entender o que está acontecendo \"por baixo dos panos\", para não apenas implementar soluções, mas para garantir que sejam as mais adequadas para aquele contexto.",
     "letsTalk": "Vamos Conversar"
   },
   "experience": {
