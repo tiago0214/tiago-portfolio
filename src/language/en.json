@@ -9,9 +9,9 @@
     "getToKnow": "Get To Know",
     "aboutMe": "About Me",
     "text1": "Hi there!",
-    "text2": "I'm a software developer with a strong foundation in C# and TypeScript. I have practical experience with .NET frameworks such as ASP.NET and Entity Framework, and in the JavaScript ecosystem, I've worked with Fastify, Express, and React. I've also worked with both relational databases like Postgres and SQL Server, as well as the non-relational MongoDB.",
-    "text3": "Currently pursuing a Computer Science degree, I'm diving deeper into advanced programming concepts and software engineering. I've also enhanced my skills through numerous online courses and bootcamps, ensuring I stay up-to-date with industry trends.",
-    "text4": "I'm currently focused on expanding my knowledge of C# and cloud applications, as well as exploring various software development methodologies. I strive to be a developer who not only implements solutions but also seeks to understand the underlying concepts. This allows me to not just deliver solutions, but to ensure they are the most suitable for the specific context.",
+    "text2": "I am a software developer with both theoretical and practical knowledge in C# and TypeScript. I have worked with .NET frameworks such as ASP.NET, Entity Framework, and in the JavaScript ecosystem, I have experience with Fastify, Express, and React. Additionally, I have worked with relational databases like PostgreSQL and SQL Server, as well as non-relational databases like MongoDB.",
+    "text3": "I am currently pursuing a degree in Computer Science, which has allowed me to delve deeper into advanced programming and software engineering concepts, as understanding how the computer works is something that fascinates me.",
+    "text4": "At the moment, I am focused on expanding my knowledge of C# and Cloud technologies, and exploring their applications. My goal is to always be a developer who not only implements solutions but strives to understand what is happening \"under the hood.\"",
     "letsTalk": "Let's Talk"
   },
   "experience": {
