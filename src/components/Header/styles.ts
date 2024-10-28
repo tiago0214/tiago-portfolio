@@ -33,7 +33,7 @@ export const MeContainer = styled.div`
   overflow: hidden;
   padding: 3rem 1.5rem 0 1.5rem;
 
-  box-shadow:inset 0 0 5px 2px ${props => props.theme["color-bg"]};
+  box-shadow:inset 0 0 1px 1px ${props => props.theme["color-bg"]};
 
   background: linear-gradient(45deg,#D4F1F4,#75E6DA,#BFD7ED,#60A3D9,#21B6A8,#A3EBB1);
   background-size: 500% 500%;
@@ -48,8 +48,8 @@ export const MeContainer = styled.div`
 
 export const ScrollContainer = styled.a`
   position: absolute;
-  bottom: 2.6rem;
-  right: -2.3rem;
+  bottom: 3rem;
+  right: 0rem;
   font-size: 0.9rem;
   font-weight: 200;
   display: flex;
