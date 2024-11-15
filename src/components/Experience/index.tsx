@@ -61,10 +61,6 @@ export function Experience({activeColor}:ThemeSelectProps){
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>NextJS</h4>
-            </article>
-            <article>
-              <SealCheck weight="fill" color={colorIcon}/>
               <h4>JavaScript</h4>
             </article>
             <article>
@@ -80,15 +76,11 @@ export function Experience({activeColor}:ThemeSelectProps){
           <ExperienceContent>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>NodeJS</h4>
+              <h4>.NET</h4>
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>TypeScript</h4>
-            </article>
-            <article>
-              <SealCheck weight="fill" color={colorIcon}/>
-              <h4>Express</h4>
+              <h4>ASP.NET</h4>
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
@@ -96,11 +88,15 @@ export function Experience({activeColor}:ThemeSelectProps){
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>.NET</h4>
+              <h4>Typescript</h4>
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>MongoDB</h4>
+              <h4>Node</h4>
+            </article>
+            <article>
+              <SealCheck weight="fill" color={colorIcon}/>
+              <h4>MySQL</h4>
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
@@ -108,7 +104,7 @@ export function Experience({activeColor}:ThemeSelectProps){
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>Docker</h4>
+              <h4>Entity Framework</h4>
             </article>
           </ExperienceContent>
         </div>
