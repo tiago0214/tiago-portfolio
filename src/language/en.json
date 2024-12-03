@@ -9,7 +9,7 @@
     "getToKnow": "Get To Know",
     "aboutMe": "About Me",
     "text1": "Hi there!",
-    "text2": "I am a software developer with both theoretical and practical knowledge in C# and TypeScript. I have worked with .NET frameworks such as ASP.NET, Entity Framework, and in the JavaScript ecosystem, I have experience with Fastify, Express, and React. Additionally, I have worked with relational databases like PostgreSQL and SQL Server, as well as non-relational databases like MongoDB.",
+    "text2": "I am a software developer with knowledge in C# and TypeScript. In .NET plataform I've worked witth ASP.NET and Entity Framework, and in the JavaScript ecosystem, I have experience with Fastify, Express, and React. Additionally, I have worked with relational databases like PostgreSQL and SQL Server, as well as non-relational databases like MongoDB.",
     "text3": "I am currently pursuing a degree in Computer Science, which has allowed me to delve deeper into advanced programming and software engineering concepts, as understanding how the computer works is something that fascinates me.",
     "text4": "At the moment, I am focused on expanding my knowledge of C# and Cloud technologies, and exploring their applications. My goal is to always be a developer who not only implements solutions but strives to understand what is happening \"under the hood.\"",
     "letsTalk": "Let's Talk"
