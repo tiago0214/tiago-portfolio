@@ -54,7 +54,7 @@ export function About(){
             <p><ArrowCircleRight/> {idiomPage.about.text1}</p>
             <p><ArrowCircleRight/> {idiomPage.about.text2}</p>
             <p><ArrowCircleRight/> {idiomPage.about.text3}</p>
-            {/* <p><ArrowCircleRight/> {idiomPage.about.text4}</p> */}
+            <p><ArrowCircleRight/> {idiomPage.about.text4}</p>
 
           </AboutParagraph>
           <a href="#contact" className="btn btn-primary">{idiomPage.about.letsTalk}</a>

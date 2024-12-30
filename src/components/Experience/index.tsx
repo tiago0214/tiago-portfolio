@@ -74,17 +74,9 @@ export function Experience({activeColor}:ThemeSelectProps){
           <h3>{idiomPage.experience.backendDev}</h3>
 
           <ExperienceContent>
-            <article>
+          <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>.NET</h4>
-            </article>
-            <article>
-              <SealCheck weight="fill" color={colorIcon}/>
-              <h4>ASP.NET</h4>
-            </article>
-            <article>
-              <SealCheck weight="fill" color={colorIcon}/>
-              <h4>C#</h4>
+              <h4>Node</h4>
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
@@ -92,7 +84,19 @@ export function Experience({activeColor}:ThemeSelectProps){
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
-              <h4>Node</h4>
+              <h4>Fastify</h4>
+            </article>
+            <article>
+              <SealCheck weight="fill" color={colorIcon}/>
+              <h4>Express</h4>
+            </article>
+            <article>
+              <SealCheck weight="fill" color={colorIcon}/>
+              <h4>C#</h4>
+            </article>
+            <article>
+              <SealCheck weight="fill" color={colorIcon}/>
+              <h4>.NET</h4>
             </article>
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
@@ -101,10 +105,6 @@ export function Experience({activeColor}:ThemeSelectProps){
             <article>
               <SealCheck weight="fill" color={colorIcon}/>
               <h4>Postgres</h4>
-            </article>
-            <article>
-              <SealCheck weight="fill" color={colorIcon}/>
-              <h4>Entity Framework</h4>
             </article>
           </ExperienceContent>
         </div>
