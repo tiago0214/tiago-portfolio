@@ -1,12 +1,15 @@
-import { Envelope, WhatsappLogo } from "@phosphor-icons/react";
 import { ContactContainer, ContactForm, ContactOption, ContactOptions } from "./styles";
 import { useForm } from "react-hook-form";
 
 import { message } from 'antd';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useContext, useEffect, useRef } from "react";
 import { AppContex } from "../../context";
+
+
 
 interface DataForm {
   name: string
@@ -75,13 +78,13 @@ export function Contact(){
       <ContactContainer className="container">
         <ContactOptions>
           <ContactOption>
-            <Envelope size={24}/>
+            <MailOutlineIcon/>
             <h4>Email</h4>
             <h5>tiago0214@gmail.com</h5>
             <a href="mailto:tiago0214@gmail.com" target="_blank">{idiomPage.contact.sendAMessage}</a>
           </ContactOption>
           <ContactOption>
-            <WhatsappLogo size={24}/>
+            <WhatsAppIcon/>
             <h4>WhatsApp</h4>
             <h5>+55(64)99282-9680</h5>
             <a href="https://api.whatsapp.com/send?phone=5564992829680" target="_blank">{idiomPage.contact.sendAMessage}</a>

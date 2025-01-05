@@ -1,4 +1,12 @@
-import { Book, Chats, Folders, HouseLine, Palette, User } from "@phosphor-icons/react";
+import CottageIcon from '@mui/icons-material/Cottage';
+import BadgeIcon from '@mui/icons-material/Badge';
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import WorkIcon from '@mui/icons-material/Work';
+import PaletteIcon from '@mui/icons-material/Palette';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+
+
+
 import { NavBarContainer, NavBarLink } from "./styles";
 import { useState } from "react";
 import { ThemeSelect, ThemeSelectProps } from "../ThemeSelect";
@@ -21,41 +29,46 @@ export function NavBar({themeSelect}:ThemeSelectProps){
         href="#" 
         onClick={() => setActiveNav('#')} 
         className= {activeNav === '#' ? 'active' : ''}
-      ><HouseLine size={20}/>
+      >
+        <CottageIcon/>
       </NavBarLink>
       <NavBarLink 
         title="about"
         href="#about" 
         onClick={() => setActiveNav('#about')}
         className= {activeNav === '#about' ? 'active' : ''}
-       ><User size={20}/> 
-       </NavBarLink>
+      >
+        <BadgeIcon/> 
+      </NavBarLink>
       <NavBarLink 
         title="experience"
         href="#experience" 
         onClick={() => setActiveNav('#experience')} 
         className= {activeNav === '#experience' ? 'active' : ''}
-      ><Book size={20}/>
+      >
+        <AutoAwesomeIcon/>
       </NavBarLink>
       <NavBarLink 
         title="projects"
         href="#projects" 
         onClick={() => setActiveNav('#projects')} 
         className= {activeNav === '#projects' ? 'active' : ''}
-      ><Folders size={20}/>
+      >
+        <WorkIcon  />
       </NavBarLink>
       <NavBarLink 
         title="contact"
         href="#contact" 
         onClick={() => setActiveNav('#contact')}
         className= {activeNav === '#contact' ? 'active' : ''}
-      > <Chats size={20}/>
+      > 
+        <ContactPhoneIcon/>
       </NavBarLink>
       
       <NavBarLink 
         onClick={() => handleShowTheme()} 
         title="color theme"
-      > <Palette size={20}/>
+      > <PaletteIcon/>
         {showTheme ? <ThemeSelect themeSelect={themeSelect}/> : <div />}
       </NavBarLink>
       

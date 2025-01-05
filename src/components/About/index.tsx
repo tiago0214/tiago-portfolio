@@ -1,11 +1,11 @@
 import { AboutContainer, AboutContent, AboutMe, AboutMeImage, AboutParagraph } from "./styles";
 
 import ME from '../../assets/about.png'
-import { ArrowCircleRight } from "@phosphor-icons/react";
 
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useContext, useEffect, useRef } from "react";
 import { AppContex } from "../../context";
+import { ArrowCircleRight } from "@mui/icons-material";
 
 
 export function About(){

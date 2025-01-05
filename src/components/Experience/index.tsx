@@ -1,4 +1,4 @@
-import { SealCheck } from "@phosphor-icons/react";
+import VerifiedIcon from '@mui/icons-material/Verified';
 import { ExperienceContainer, ExperienceContent } from "./styles";
 
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -11,7 +11,7 @@ export function Experience({activeColor}:ThemeSelectProps){
   const { idiomPage } = useContext(AppContex);
 
   const ref = useRef(null);
-  const isInView = useInView(ref,{
+  const isInView = useInView(ref,{  
     once: true
   });
 
@@ -48,23 +48,23 @@ export function Experience({activeColor}:ThemeSelectProps){
 
           <ExperienceContent>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }} />
               <h4>React</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>Tailwind</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>StyledComponents</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>JavaScript</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>TypeScript</h4>
             </article>
           </ExperienceContent>
@@ -75,35 +75,35 @@ export function Experience({activeColor}:ThemeSelectProps){
 
           <ExperienceContent>
           <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>Node</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small"  sx={{ color: colorIcon }}/>
               <h4>Typescript</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>Fastify</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>Express</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>C#</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>.NET</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>MySQL</h4>
             </article>
             <article>
-              <SealCheck weight="fill" color={colorIcon}/>
+              <VerifiedIcon fontSize="small" sx={{ color: colorIcon }}/>
               <h4>Postgres</h4>
             </article>
           </ExperienceContent>
