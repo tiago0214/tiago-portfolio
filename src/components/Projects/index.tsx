@@ -8,8 +8,7 @@ import { AppContex } from "../../context";
 import IMG1 from '../../assets/projectsImg/beauty.png'
 import GITHUB from '../../assets/projectsImg/github.jpeg'
 import LOGIN from '../../assets/projectsImg/login.png'
-
-
+import TODO from '../../assets/projectsImg/todo.png'
 
 const data = [
   {
@@ -37,7 +36,14 @@ const data = [
     info: "App for decoding messages: JavaScript",
     github: "https://github.com/tiago0214/encoding-challenge",
   },
+  {
+    id: 5,
+    image: TODO,
+    info: 'To do list app: Typescript',
+    github: "https://github.com/tiago0214/to-do-list"
+  }
 ]
+
 interface DataProps {
   id: number
   image: string
@@ -45,7 +51,6 @@ interface DataProps {
   github: string
   deploy?: string
 }
-
 
 export function Projects(){
   const {idiomPage} = useContext(AppContex);
