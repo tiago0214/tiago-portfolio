@@ -9,7 +9,7 @@
     "getToKnow": "Get To Know",
     "aboutMe": "About Me",
     "text1": "Hi there!",
-    "text2": "I am a Computer Science student, and my main focus area is full-stack web development with TypeScript.",
+    "text2": "I am a System Information student at PUC Minas, and my main focus area is full-stack web development with TypeScript.",
     "text3": "I have developed backend applications in Node.js and C#, using frameworks such as Fastify / Express, and in the Microsoft ecosystem with .NET / ASP.NET. On the frontend, I have worked with React, using Tailwind CSS and Styled Components.",
     "text4": "Beyond coding itself, I have knowledge in CI/CD with GitHub Actions, Docker, and some design patterns and principles in development.",
     "letsTalk": "Let's Talk"
