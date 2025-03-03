@@ -9,6 +9,7 @@ import IMG1 from '../../assets/projectsImg/beauty.png'
 import GITHUB from '../../assets/projectsImg/github.jpeg'
 import LOGIN from '../../assets/projectsImg/login.png'
 import TODO from '../../assets/projectsImg/todo.png'
+import COFFEE from '../../assets/projectsImg/coffee.png'
 
 const data = [
   {
@@ -20,24 +21,32 @@ const data = [
   },
   {
     id: 2,
+    image : COFFEE,
+    info: "A web commerce platform: JavaScript",
+    github: "https://github.com/tiago0214/coffee-delivery",
+    deploy:  "https://coffee-delivery-theta-two.vercel.app/"
+  }
+  ,
+  {
+    id: 3,
     image: LOGIN,
     info: "App for manager user data: TypeScript",
     github: "https://github.com/tiago0214/login-page"
   },
   {
-    id: 3,
+    id: 4,
     image : GITHUB,
     info: "App that integrate with Google API: C#",
     github: "https://github.com/tiago0214/challenge-google-sheets",
   },
   {
-    id: 4,
+    id: 5,
     image : GITHUB,
     info: "App for decoding messages: JavaScript",
     github: "https://github.com/tiago0214/encoding-challenge",
   },
   {
-    id: 5,
+    id: 6,
     image: TODO,
     info: 'To do list app: Typescript',
     github: "https://github.com/tiago0214/to-do-list"
