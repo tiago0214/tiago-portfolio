@@ -14,19 +14,18 @@ import COFFEE from '../../assets/projectsImg/coffee.png'
 const data = [
   {
     id: 1,
+    image : COFFEE,
+    info: "A web commerce platform: React",
+    github: "https://github.com/tiago0214/coffee-delivery",
+    deploy:  "https://coffee-delivery-theta-two.vercel.app/"
+  },
+  {
+    id: 2,
     image : IMG1,
     info: "A web commerce platform: JavaScript",
     github: "https://github.com/tiago0214/beauty-company-project",
     deploy:  "https://beauty-company-project.vercel.app/"
   },
-  {
-    id: 2,
-    image : COFFEE,
-    info: "A web commerce platform: JavaScript",
-    github: "https://github.com/tiago0214/coffee-delivery",
-    deploy:  "https://coffee-delivery-theta-two.vercel.app/"
-  }
-  ,
   {
     id: 3,
     image: LOGIN,
