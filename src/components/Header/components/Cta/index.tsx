@@ -1,7 +1,7 @@
 import { CtaLink, CtaContainer } from "./styles";
 
-import CvPt from '../../../../assets/cv-pt.pdf';
-import CvEn from '../../../../assets/cv-en.pdf';
+import CvPt from '../../../../assets/TiagoDias-pt.pdf';
+import CvEn from '../../../../assets/TiagoDias-en.pdf';
 
 import { useContext } from "react";
 import { AppContex } from "../../../../context";
