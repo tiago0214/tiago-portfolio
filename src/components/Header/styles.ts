@@ -29,14 +29,15 @@ export const MeContainer = styled.div`
   left: 50%;
   transform: translateX(-50%);
   margin-top: 8.0rem;
-  border-radius: 12rem 12rem 1rem 1rem;
+  border-radius: 9999px;
+  /* border-radius: 12rem 12rem 1rem 1rem; */
   overflow: hidden;
-  padding: 3rem 1.5rem 0 1.5rem;
+  padding: 1.5rem 1rem 0 1rem;
 
   box-shadow:inset 0 0 1px 1px ${props => props.theme["color-bg"]};
 
   background: linear-gradient(45deg,#D4F1F4,#75E6DA,#BFD7ED,#60A3D9,#21B6A8,#A3EBB1);
-  background-size: 500% 500%;
+  /* background-size: 500% 500%; */
   animation: color 12s ease-in-out infinite alternate;
 
   @keyframes color{
