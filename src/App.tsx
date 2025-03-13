@@ -51,7 +51,7 @@ export function App() {
         <Header />
         <NavBar themeSelect={changeTheme} activeColor={activeColor}/>
         <About />
-        <Experience activeColor={activeColor}/>
+        <Experience/>
         <Projects />
         <Contact />
         <Footer />
