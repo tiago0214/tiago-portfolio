@@ -1,77 +1,70 @@
 import styled from "styled-components";
 
 export const ExperienceContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: 940px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 
-  @media screen and (max-width: 1024px){
-    &{
-      grid-template-columns: 1fr;
-    }
+  @media screen and (max-width: 1200px){
+   width: 90%;
   }
+
+  /* @media screen and (min-width: 601px){
+    width: 80%;
+  }
+
   @media screen and (max-width: 600px){
-    &{
-      gap: 1rem;
-    }
-  }
-  
-
-  & > div{
-    background: ${props => props.theme["bg-variant"]};
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid black;
-    transition: ${props => props.theme.transition};
-
-    & > h3 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: ${props => props.theme.primary};
-    }
-
-    &:hover{
-      background: rgba(0,0,0,0.2);
-      border-color: ${props => props.theme["primary-variant"]};
-      cursor: default;
-    }
-
-    @media screen and (max-width: 1024px){
-      width: 80%;
-      padding: 2rem;
-      margin: 0 auto;
-    }
-
-    @media screen and (max-width: 600px){
-      &{    
-        width: 100%;
-        padding: 0;
-      }
-    }
-  }
+    width: 80%;
+  } */
 `;
 
-export const ExperienceContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* row-gap: 2rem; */
-  gap: 2rem;
+export const TechIcon = styled.div`
+  background: ${props => props.theme["bg-variant"]};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
 
-  article{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
+  width: 8rem;
+  height: 8rem;
 
-  @media screen and (max-width: 1024px){
-    &{
-      padding: 1rem;
-    }
-  }
-  @media screen and (max-width: 600px){
-    &{
-      gap: 0;
-      padding: 0 0.5rem 1rem 0.5rem;
-    }
+  transition: ${props => props.theme.transition};
+
+  &:hover{
+    background: rgb(0,0,0,0.2);
+    border-color: ${props => props.theme["primary-variant"]};
   }
 `
+
+
+// export const ExperienceContent = styled.div`
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   /* row-gap: 2rem; */
+//   gap: 2rem;
+
+//   article{
+//     display: flex;
+//     gap: 1rem;
+//     align-items: center;
+//   }
+
+//   @media screen and (max-width: 1024px){
+//     &{
+//       padding: 1rem;
+//     }
+//   }
+//   @media screen and (max-width: 600px){
+//     &{
+//       gap: 0;
+//       padding: 0 0.5rem 1rem 0.5rem;
+//     }
+//   }
+// `
