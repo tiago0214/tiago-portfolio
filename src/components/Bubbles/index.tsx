@@ -55,6 +55,54 @@ export function Bubbles(){
         <BubbleSpan speed={22}/>
         <BubbleSpan speed={28}/>
         <BubbleSpan speed={5}/>
+
+        <BubbleSpan speed={17}/>
+        <BubbleSpan speed={13}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={15}/>
+        <BubbleSpan speed={20}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={26}/>
+        <BubbleSpan speed={7}/>
+        <BubbleSpan speed={22}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={5}/>
+
+        <BubbleSpan speed={17}/>
+        <BubbleSpan speed={13}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={15}/>
+        <BubbleSpan speed={20}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={26}/>
+        <BubbleSpan speed={7}/>
+        <BubbleSpan speed={22}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={5}/>
+
+        <BubbleSpan speed={17}/>
+        <BubbleSpan speed={13}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={15}/>
+        <BubbleSpan speed={20}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={26}/>
+        <BubbleSpan speed={7}/>
+        <BubbleSpan speed={22}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={5}/>
+
+        <BubbleSpan speed={17}/>
+        <BubbleSpan speed={13}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={15}/>
+        <BubbleSpan speed={20}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={26}/>
+        <BubbleSpan speed={7}/>
+        <BubbleSpan speed={22}/>
+        <BubbleSpan speed={28}/>
+        <BubbleSpan speed={5}/>
       </BubblesContent>
     </BubblesContainer>
   )
